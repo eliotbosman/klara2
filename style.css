@@ -1,0 +1,250 @@
+body {
+    overflow-x: hidden;
+}
+
+marquee, figcaption, nav, h2, p, small, pre, button {
+    font-family: 'ABCDiatypeMonoEdu-Light';
+}
+
+marquee {
+    margin-top: 0.5vh;
+    font-family: 'ABCDiatypeMonoEdu-Light';
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 0.30fr 0.10fr 0.10fr 0.10fr 0.10fr 0.10fr 0.10fr;
+    margin-bottom: 0.5vh;
+    font-family: 'ABCDiatypeMonoEdu-Light';
+    font-size: 10pt;
+    padding-bottom: 1vh;
+}
+
+.archive, .feature, .project, .tool {
+    margin: 0;
+    width: 99vw; height: 96vh;
+}
+
+.archive-title:hover {
+    background: black;
+    color: white;
+    transition: 0.8s;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.nav-li:hover, button:hover {
+    transition: all 0.2s;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+button {
+    background: none;
+    border: none;
+    margin-left: -0.4vw;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+h2 {
+    font-family: 'ABCDiatypeMonoEdu-Light';
+    font-weight: lighter;
+    font-size: 12pt;
+    margin-top: 2.5vh;
+}
+
+p {
+    font-family: 'ABCDiatypeMonoEdu-Light';
+    font-size: 10pt;
+    text-align: justify;
+    margin-right: 8vw;
+    margin-left: 4vw;
+}
+
+.about {
+    display: none;
+    width: 40vw;
+}
+
+.archive {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'ABCDiatypeMonoEdu-Light';
+    border-bottom: 1px solid black;
+    font-size: 10pt;
+}
+
+.archive-date, .archive-title {
+    margin-top: 1vh;
+    border-bottom: 1px solid black;
+    width: 20vw;
+}
+
+.a-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 3vh;
+    margin-left: -1vw;
+    margin-top: 4vh;
+    width: 15vw;
+}
+
+.a-right {
+    width: 65vw;
+}
+
+.a-img {
+    margin-top: 4vh;
+    max-width: 45vw;
+    max-height: 75vh;
+}
+
+.a-figcaption {
+    margin-right: 20vw;
+}
+
+.archive-title {
+    text-align: left;
+}
+
+.feature {
+    height: 92vh;
+    display: inline;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#f-img1 {
+    position: relative;
+    top: 4vh;
+    left: 4vw;
+}
+
+#f-img2 {
+    position: relative;
+    top: 40vh;
+    right: 2vw;
+}
+
+#f-img3 {
+    position: relative;
+    top: 2vh;
+    right: 4vw;
+}
+
+#f-img4 {
+    position: relative;
+    top: 42vh;
+    right: 2vw;
+}
+
+#f-img5 {
+    position: relative;
+    transform: rotate(90deg);
+    right: 12vw;
+    top: -6vh;
+}
+
+#f-img7 {
+    position: absolute;
+    top: 38vh;
+    right: 2vw;
+
+} 
+
+.project {
+    display: none;
+    grid-template-columns: 0.2fr 0.8fr;
+    border-bottom: 1px solid black;
+}
+
+.p-left {
+    margin-left: 1vw;
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow-y: scroll;
+}
+
+.p-right {
+    display: grid;
+    width: 50vw;
+    background: white;
+    position: sticky;
+}
+
+.p-img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 6vh;
+}
+
+.p-button {
+    text-align: left;
+    margin-left: 3.5vw;
+}
+
+.p-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3vh;
+    position: relative;
+    right: 23.5vw;
+}
+
+.p-left::-webkit-scrollbar {
+    display: none;
+  }
+
+.f-img {
+    max-width: 25vw; max-height: 50vh;
+    cursor: pointer;
+}
+
+.tool {
+    margin-top: 2vh;
+    display: none;
+    border-bottom: 1px solid black;
+}
+
+.t-img {
+    max-width: 12vw; max-height: 30vh;
+}
+
+figcaption {
+    font-size: 10pt;
+}
+
+
+@media screen and (max-width: 770px) {
+
+    .feature {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+
+@font-face {
+    font-family: 'ABCDiatypeMonoEdu-Light';
+    src: url('fonts/ABCDiatypeMonoEdu-Light.woff') format('.woff'),
+    url('fonts/ABCDiatypeMonoEdu-Light.woff') format('.woff2');
+}
+
+@font-face {
+    font-family: 'Agrandir-Regular';
+    src: url('fonts/Agrandir-Regular.woff') format('.woff'),
+         url('fonts/Agrandir-Regular.woff2') format('.woff2');
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
